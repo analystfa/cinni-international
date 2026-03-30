@@ -126,7 +126,7 @@ const Index = () => {
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">
             {/* Amazon */}
-            <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://www.amazon.com/cinnileather" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 603 182" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M373.642 141.938c-34.999 25.797-85.729 39.561-129.406 39.561-61.243 0-116.377-22.651-158.088-60.325-3.278-2.963-.341-7.001 3.592-4.697 45.014 26.191 100.673 41.947 158.166 41.947 38.775 0 81.429-8.022 120.654-24.674 5.926-2.517 10.88 3.879 5.082 8.188z" fill="hsl(var(--foreground) / 0.7)"/>
                 <path d="M388.182 125.29c-4.466-5.719-29.572-2.702-40.846-1.363-3.434.42-3.959-2.57-.865-4.723 20.003-14.078 52.822-10.012 56.649-5.296 3.827 4.742-.997 37.615-19.794 53.3-2.886 2.413-5.64 1.128-4.362-2.07 4.232-10.564 13.736-34.239 9.218-39.848z" fill="hsl(var(--foreground) / 0.7)"/>
@@ -135,7 +135,7 @@ const Index = () => {
               <span className="font-body text-xs text-muted-foreground">Amazon</span>
             </a>
             {/* eBay */}
-            <a href="https://www.ebay.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://www.ebay.com/usr/cinnileather" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <text x="0" y="85" fontFamily="Helvetica, Arial, sans-serif" fontWeight="bold" fontSize="80">
                   <tspan fill="#E53238">e</tspan>
@@ -147,14 +147,14 @@ const Index = () => {
               <span className="font-body text-xs text-muted-foreground">eBay</span>
             </a>
             {/* Etsy */}
-            <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://cinnileather.etsy.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <text x="0" y="65" fontFamily="Georgia, 'Times New Roman', serif" fontWeight="bold" fontStyle="italic" fontSize="70" fill="#F1641E">Etsy</text>
               </svg>
               <span className="font-body text-xs text-muted-foreground">Etsy</span>
             </a>
             {/* Walmart */}
-            <a href="https://www.walmart.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://www.walmart.com/cinnileather" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <text x="0" y="60" fontFamily="Helvetica, Arial, sans-serif" fontWeight="bold" fontSize="55" fill="#0071CE">Walmart</text>
                 <g transform="translate(265,15)">
