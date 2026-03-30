@@ -113,7 +113,7 @@ const PrivacyPolicy = () => (
         <p>
           If you have any questions regarding this Privacy Policy or how your
           information is handled, please contact us at{" "}
-          <strong>info@cinni.com</strong>.
+          <strong>info@cinniinternational.com</strong>.
         </p>
 
       </div>
