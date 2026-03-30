@@ -114,7 +114,7 @@ const Terms = () => (
         </h2>
         <p>
           If you have any questions regarding these Terms &amp; Conditions,
-          please contact us at <strong>info@cinni.com</strong>.
+          please contact us at <strong>info@cinniinternational.com</strong>.
         </p>
 
       </div>
