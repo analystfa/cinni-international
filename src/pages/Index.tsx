@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import EnquiryPopup from "@/components/EnquiryPopup";
 import { products, categories } from "@/data/products";
 import heroImg from "@/assets/hero-leather.jpg";
+import { Gem, Factory, Globe, Wrench, ShieldCheck, Truck } from "lucide-react";
 
 const showcaseProducts = [products[0], products[4], products[9], products[12]];
 
@@ -69,11 +70,14 @@ const Index = () => {
                   <h3 className="font-heading text-2xl md:text-3xl font-semibold text-foreground mb-3">
                     {product.title}
                   </h3>
-                  <p className="font-body text-primary font-medium mb-3">{product.priceRange}</p>
+                  <p className="font-body text-lg font-semibold text-primary mb-1">{product.priceRange} <span className="text-xs font-normal text-muted-foreground">per unit</span></p>
+                  <p className="font-body text-xs text-muted-foreground italic mb-3">
+                    Better pricing available for higher quantities — contact us for a custom quote.
+                  </p>
                   <p className="font-body text-muted-foreground leading-relaxed mb-6">
                     {product.description}
                   </p>
-                  <Button onClick={() => setEnquiryOpen(true)}>Enquire Now</Button>
+                  <Button onClick={() => setEnquiryOpen(true)}>Request Wholesale Quote</Button>
                 </div>
               </div>
             ))}
@@ -115,6 +119,50 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why Choose CINNI */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 lg:px-8 text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-3">
+            Why Global Buyers Choose CINNI
+          </h2>
+          <p className="font-body text-muted-foreground mb-14 max-w-xl mx-auto">
+            Quality, reliability, and craftsmanship trusted across continents.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-6">
+            {[
+              { icon: Gem, label: "Premium Leather Craftsmanship" },
+              { icon: Factory, label: "Bulk Production Capability" },
+              { icon: Globe, label: "Worldwide Shipping" },
+              { icon: Wrench, label: "Custom Manufacturing" },
+              { icon: ShieldCheck, label: "Trusted by International Buyers" },
+            ].map(({ icon: Icon, label }) => (
+              <div key={label} className="flex flex-col items-center gap-3">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+                  <Icon size={24} className="text-primary" />
+                </div>
+                <p className="font-body text-sm font-medium text-foreground leading-snug">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Global Supply */}
+      <section className="py-20 bg-card">
+        <div className="container mx-auto px-4 lg:px-8 text-center max-w-3xl">
+          <h2 className="font-heading text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            Supplying Leather Goods Worldwide
+          </h2>
+          <p className="font-body text-muted-foreground leading-relaxed mb-4">
+            With over a decade of export experience, CINNI supplies premium leather goods to wholesalers, retailers, and brands across the USA, UK, and Europe. Our vertically integrated manufacturing ensures consistent quality, competitive pricing, and the flexibility to fulfil orders of any scale.
+          </p>
+          <p className="font-body text-sm font-medium text-foreground/80 flex items-center justify-center gap-2">
+            <Truck size={16} className="text-primary" />
+            Secure packaging and reliable international shipping via DHL / FedEx.
+          </p>
+        </div>
+      </section>
+
       {/* Retail Presence */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8 text-center">
@@ -126,7 +174,7 @@ const Index = () => {
           </p>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20">
             {/* Amazon */}
-            <a href="https://www.amazon.com/cinnileather" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 603 182" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M373.642 141.938c-34.999 25.797-85.729 39.561-129.406 39.561-61.243 0-116.377-22.651-158.088-60.325-3.278-2.963-.341-7.001 3.592-4.697 45.014 26.191 100.673 41.947 158.166 41.947 38.775 0 81.429-8.022 120.654-24.674 5.926-2.517 10.88 3.879 5.082 8.188z" fill="hsl(var(--foreground) / 0.7)"/>
                 <path d="M388.182 125.29c-4.466-5.719-29.572-2.702-40.846-1.363-3.434.42-3.959-2.57-.865-4.723 20.003-14.078 52.822-10.012 56.649-5.296 3.827 4.742-.997 37.615-19.794 53.3-2.886 2.413-5.64 1.128-4.362-2.07 4.232-10.564 13.736-34.239 9.218-39.848z" fill="hsl(var(--foreground) / 0.7)"/>
@@ -135,7 +183,7 @@ const Index = () => {
               <span className="font-body text-xs text-muted-foreground">Amazon</span>
             </a>
             {/* eBay */}
-            <a href="https://www.ebay.com/usr/cinnileather" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://www.ebay.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <text x="0" y="85" fontFamily="Helvetica, Arial, sans-serif" fontWeight="bold" fontSize="80">
                   <tspan fill="#E53238">e</tspan>
@@ -147,14 +195,14 @@ const Index = () => {
               <span className="font-body text-xs text-muted-foreground">eBay</span>
             </a>
             {/* Etsy */}
-            <a href="https://cinnileather.etsy.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://www.etsy.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <text x="0" y="65" fontFamily="Georgia, 'Times New Roman', serif" fontWeight="bold" fontStyle="italic" fontSize="70" fill="#F1641E">Etsy</text>
               </svg>
               <span className="font-body text-xs text-muted-foreground">Etsy</span>
             </a>
             {/* Walmart */}
-            <a href="https://www.walmart.com/cinnileather" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
+            <a href="https://www.walmart.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-3 transition-transform duration-200 hover:scale-105">
               <svg className="h-10 w-auto" viewBox="0 0 300 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <text x="0" y="60" fontFamily="Helvetica, Arial, sans-serif" fontWeight="bold" fontSize="55" fill="#0071CE">Walmart</text>
                 <g transform="translate(265,15)">

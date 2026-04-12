@@ -39,10 +39,10 @@ const Footer = () => (
           <h4 className="font-heading text-lg font-semibold mb-4">Get in Touch</h4>
           <ul className="space-y-3 font-body text-sm text-primary-foreground/70">
             <li>
-              <a href="mailto:sales@cinniinternational.com" className="hover:text-primary-foreground transition-colors">sales@cinniinternational.com</a>
+              <a href="mailto:hello@cinni.com" className="hover:text-primary-foreground transition-colors">hello@cinni.com</a>
             </li>
             <li>
-              <a href="https://wa.me/917084500555" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">+91 7084 500 555</a>
+              <a href="https://wa.me/12345678900" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">+1 234 567 8900</a>
             </li>
           </ul>
         </div>
