@@ -24,7 +24,7 @@ const EnquiryPopup = ({ open, onOpenChange, productTitle }: EnquiryPopupProps) =
       </p>
       <div className="flex flex-col gap-3">
         <Button asChild className="gap-2" size="lg">
-          <a href="https://wa.me/12345678900?text=Hi%2C%20I'm%20interested%20in%20your%20wholesale%20leather%20products" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/917084500555?text=Hi%2C%20I'm%20interested%20in%20your%20wholesale%20leather%20products" target="_blank" rel="noopener noreferrer">
             <MessageCircle size={18} />
             Chat on WhatsApp
           </a>
