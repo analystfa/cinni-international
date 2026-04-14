@@ -43,7 +43,7 @@ const Contact = () => {
                 <MessageCircle size={20} className="text-primary mt-0.5" />
                 <div>
                   <h3 className="font-body font-semibold text-foreground">WhatsApp</h3>
-                  <a href="https://wa.me/917084500555" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">+1 234 567 8900</a>
+                  <a href="https://wa.me/919044130123" target="_blank" rel="noopener noreferrer" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">+1 234 567 8900</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
